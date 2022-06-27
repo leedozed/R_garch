@@ -6,6 +6,7 @@
 # 5. garch specificarion output
 # 6. plot the graph
 # 7. Forecast the volatility
+# 8. various graphs
 
 library(readxl)
 library(tseries)
@@ -49,3 +50,6 @@ plot(news_garch$zx, news_garch$zy, ylab=news_garch$yexpr, xlab=news_garch$xexpr,
 kospi_forecast = ugarchforecast(kospi_garch_fit, n.head=10)
 kospi_forecast = ugarchforecast(kospi_garch_fit, n.ahead=20)
 kospi_forecast
+
+# 8. various graphs
+plot(kospi_garch_fit)
