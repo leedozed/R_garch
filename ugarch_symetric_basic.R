@@ -13,7 +13,6 @@ library(tseries)
 library(rugarch)#garch model
 library(FinTS)
 library(e1071)
-library(zoo) #about NA
 
 GARCH_2022 <- read_excel("F:/DATA_GARCH/GARCH_2022.xlsx",
                          col_types = c("date", "numeric", "numeric",
